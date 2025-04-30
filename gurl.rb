@@ -5,12 +5,12 @@
 class Gurl < Formula
   desc "Modern HTTP client CLI with JSON support"
   homepage "https://github.com/geekyharsh05/gurl"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
-    url "https://github.com/geekyharsh05/gurl/releases/download/v1.0.0/gurl_1.0.0_darwin_all.tar.gz"
-    sha256 "430a087130d193186eb0a7d0b58a679337a95986f0888fd7b1776384b8247132"
+    url "https://github.com/geekyharsh05/gurl/releases/download/v1.0.1/gurl_1.0.1_darwin_all.tar.gz"
+    sha256 "69efac7548b24989b80b4e7226078f4b94240df8e1cc84f5b342e94c49d6f203"
 
     def install
       bin.install "gurl"
@@ -19,15 +19,15 @@ class Gurl < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/geekyharsh05/gurl/releases/download/v1.0.0/gurl_1.0.0_linux_amd64.tar.gz"
-      sha256 "3dff54907f314dfd3ea92e1898e2b679d11d4b87e34c9b042123dfe88762241a"
+      url "https://github.com/geekyharsh05/gurl/releases/download/v1.0.1/gurl_1.0.1_linux_amd64.tar.gz"
+      sha256 "5f225adaac60705517a5f447cc0405f97550a833309b3d92db9996827021bafe"
       def install
         bin.install "gurl"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/geekyharsh05/gurl/releases/download/v1.0.0/gurl_1.0.0_linux_arm64.tar.gz"
-      sha256 "f8961696da9ba203d952136e6b040b24be860424eb1152f5fdc306ea335022ff"
+      url "https://github.com/geekyharsh05/gurl/releases/download/v1.0.1/gurl_1.0.1_linux_arm64.tar.gz"
+      sha256 "ca14b132cfb08e7ac60318f81b28d7f12663bfacadd969b41264d16c88c67d8b"
       def install
         bin.install "gurl"
       end
