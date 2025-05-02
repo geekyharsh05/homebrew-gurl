@@ -10,7 +10,7 @@ class Gurl < Formula
 
   on_macos do
     url "https://github.com/geekyharsh05/gurl/releases/download/v1.0.1/gurl_1.0.1_darwin_all.tar.gz"
-    sha256 "69efac7548b24989b80b4e7226078f4b94240df8e1cc84f5b342e94c49d6f203"
+    sha256 "02a8f0d24a45e8128a011dbe7db935fc9b91ca41eedaa67ab68f51925db1bc44"
 
     def install
       bin.install "gurl"
@@ -20,14 +20,14 @@ class Gurl < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/geekyharsh05/gurl/releases/download/v1.0.1/gurl_1.0.1_linux_amd64.tar.gz"
-      sha256 "5f225adaac60705517a5f447cc0405f97550a833309b3d92db9996827021bafe"
+      sha256 "9d6d68f762b9334376161aaa507f7a76c6f602e40d2f7b5d062dd95ecbe306f6"
       def install
         bin.install "gurl"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/geekyharsh05/gurl/releases/download/v1.0.1/gurl_1.0.1_linux_arm64.tar.gz"
-      sha256 "ca14b132cfb08e7ac60318f81b28d7f12663bfacadd969b41264d16c88c67d8b"
+      sha256 "fe47793b83ff53022feb3927527cadfd97b9610afad27ef69007c78d662567bc"
       def install
         bin.install "gurl"
       end
